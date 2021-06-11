@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>education.html</title>
+</head>
+<body>
+<a name="top"></a>
+<style>
+body {
+  background-image: url(photos/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+</style>
+
+<marquee behavior="alternate"><img src="photos/slide1.jpg"><img src="photos/slide2.jpg"><img src="photos/slide1.jpg"></marquee> 
+<br>
+<table border="0" width="80%" align="center" 
+<align="middle" cellpadding="10" cellspacing"10">
+
+<br>
+ </h1><td colspan="4" align="center">
+<a href="index.html"><img src="button/home.button.png"> </a>
+<a href="biodata.html"><img src="button/biodata.button.png"> </a>
+<a href="education.html"><img src="button/education.button.png"> </a>
+<a href="experience.html"><img src="button/experience.button.png"> </a>
+<a href="family.html"><img src="button/family.button.png"> </a>
+<a href="gallery.html"><img src="button/gallery.button.png"> </a>
+<a href="hobby.html"><img src="button/hobby.button.png"> </a>
+<br>
+
+<center><font face="Lucida Handwriting" font color="TOMATO" font size="5"><h1><a name="top">MY EDUCATION</a></h1></font>
+<br>
+<br>
+<center><h2><font color="#641E16 "><font face="times new roman"><font size="6"a name="top"> Schools And University </a></h2>
+<table border="0" width="90%" align="center" 
+<align="middle" cellpadding="10" cellspacing"10">
+<tr>
+    <td><center><img src="photos/skpa.png" alt="SKPA" width="500" height="500" border="2"</td>
+    <td bgcolor="#FADBD8"><i><b><center><h1><abbr title="Sekolah Kebangsaan Pengkalan Aur">SKPA</abbr></h1></i></b>
+
+     <font face="Tahoma"><font color="maroon"><font size="4"><left><p>
+                                                               I started school sessions from 
+                                                               kindergarten when I was 6 years old until I was 12 years old at this school.
+                                                               This is the school closest to my house, it is about 8<sup>(m)</sup>. 
+                                                               My class teacher's name is teacher's Norhayati. She was my 
+                                                               first teacher that I really remember. 
+                                                               </p></td>
+</tr>
+<tr>
+    <td><i><b><center><H1><font size="4">Sekolah Kebangsaan Pengkalan Aur</HI></i></b></td>
+</tr>
+
+
+<tr>
+ <td bgcolor="#FAD7A0"><i><b><center><h1><abbr title="Sekolah Menengah Kebangsaan Doktor Burhanuddin">SMKDB</abbr></h1></i></b>
+
+     <font face="Tahoma"><font color="maroon"><font size="4"><left><p>
+                                                              I continued my secondary school at this school from the age of 13 to 17 where 
+                                                              I finished my schooling with the <i><abbr title="Sijil Pelajaran Malaysia">SPM</abbr></i> examination.
+                                                              This school is located in Taiping City, which is quite far from my home.
+                                                              I am less active in sports and co-curricular activities since it is tough 
+                                                              for me to go to school because I only use bus as my transport.
+                                                              However, I frequently achieve good exam grades for myself.
+                                                               </p></td>
+
+<td><center><img src="photos/smkdb.png" alt"SMKDB" width="500" height="500" border="2"</td>
+<tr>
+    <td></td>
+<td><i><b><center><h1><font size="4">Sekolah Menengah Kebangsaan Doktor Burhanuddin</hI></i></b></td>
+</tr>
+
+
+<tr>
+    <td><center><img src="photos/uitmkedah.png" alt="UITMKDH" width="500" height="500" border="2"</td>
+    <td bgcolor="#D7BDE2"><i><b><center><h1><abbr title="Universiti Teknologi Mara Kedah">UiTMKDH</abbr></h1></i></b>
+
+     <font face="Tahoma"><font color="maroon"><font size="4"><left><p>
+                                                               This is where I am today in order to pursue my studies in the subject of Information and Management <abbr title="Information Management 110">(IM110)</abbr>. 
+                                                               I never expected to be here, but owing to my own efforts, I am here to leave a significant legacy in my life.
+                                                               Because I am away from my family, I have a totally different experience while I am here. 
+                                                               Despite the fact that the new environment was only something I could sense for a year owing to the disease's breakout, I was still really glad to have had an interesting experience.
+                                                               </p></td>
+</tr>
+<tr>
+    <td><i><b><center><h1><font size="4">Universiti Teknologi Mara Sungai Petani, Kedah</hI></i></b></td>
+</tr>
+</table>
+<br>
+<br>
+<table border="0" width="100%" align="center" 
+<align="middle" cellpadding="15" cellspacing"15">
+<tr>
+<td bgcolor="F9E8A2"><h1>Date and Time</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click to display.</button>
+
+<p id="demo"></p></td>
+</tr>
+<tr>
+<center><td>
+<style="background-color:">
+<canvas id="canvas" width="400" height="400"
+style="background-color:">
+</canvas>
+<canvas id="canvas" width="400" height="400"
+style>
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 5;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'pink';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, 'black');
+  grad.addColorStop(0.5, 'black');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script></td>
+</tr>
+</table>
+<br>
+<br>
+<embed src="sound/slowmusic.mp3" hidden="true"></embed>
+<a href="education.html"><img src="button/top.button.png"></a>
+<a href="#top"><img src"button/top.button.png"</a>
+</body>
+</html>

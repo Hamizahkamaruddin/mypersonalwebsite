@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>experience.html</title>
+</head>
+<body>
+<style>
+body {
+  background-image: url(photos/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+</style>
+<br>
+<marquee behavior="alternate"><img src="photos/slide1.jpg"><img src="photos/slide2.jpg"><img src="photos/slide1.jpg"></marquee>
+
+<br>
+<table border="0" width="80%" align="center" 
+<align="middle" cellpadding="10" cellspacing"10">
+
+<td colspan="4" align="center">
+<a href="index.html"><img src="button/home.button.png"></a>
+<a href="biodata.html"><img src="button/biodata.button.png"></a>
+<a href="education.html"><img src="button/education.button.png"></a>
+<a href="experience.html"><img src="button/experience.button.png"></a>
+<a href="family.html"><img src="button/family.button.png"></a>
+<a href="gallery.html"><img src="button/gallery.button.png"></a>
+<a href="hobby.html"><img src="button/hobby.button.png"></a>
+<br>
+
+<center><font face="Lucida Handwriting"font color="TOMATO"font size="5"><h1><a name="top">MY EXPERIENCE</a></h1></font>
+<br>
+<br>
+<h1 style="font-size:230%;">Travelling <span style='font-size:30px;'>&#9992;</span></h1>
+
+<blockqate><font face="Times New Romen"font color="brown"font size="5"><p>I love a place that is naturally sourced and refreshing. 
+An interesting experience in my life is when I am with my partner going to a place that I have never been to and my partner who always suggests an interesting place that suits my wishes. 
+During semester break I would go to an interesting place to get the experience and atmosphere of a new place. 
+Here is some of the place I've been to:</p></font></blockquate>
+<br>
+
+<iu><a href="#AQUARIA"><font size="4"><li>Aquaria KLCC</a></li>
+<iu><a href="#MUSEUM"><font size="4"><li>Matang's Museum</a></li>
+<iu><a href="#ECOPARK"><font size="4"><li>Spritzer Eco Park</a></li>
+<iu><a href="#TAMBUN"><font size="4"><li>Lost World Of Tambun Theme Park</a></li>
+<br> 
+<br> 
+<br>
+<h1>Travelling Experience Vlog</h1>
+<video height="400" width="700" controls>
+   <source src="videos/experience.MP4" type="video/mp4">
+</video>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table border="0" width="30%" align="center" 
+<align="middle" cellpadding="10" cellspacing"8">
+<tr>
+    <th bgcolor="#ECF0F1"><head>
+<style> 
+p.Introduction {
+  width: 1280px; 
+  border: 5px solid #F5B7B1 ;
+  word-break: keep-all;
+}
+
+</style>
+</head>
+<body>
+
+<center><p class="Introduction"><font face="Times new roman" font size="6"><b>
+Photo Of Me At That Places</b></p></font></th>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<b><font size="4" font face="verdana"><a name="AQUARIA">Aquaria KLCC</a></b></font>
+<br>
+<CENTER><a href="https://aquariaklcc.com/"><img src="photos/aquaria.png" alt="Me at Aquaria KLCC" border="4"></a>
+<br>
+<br>
+<br>
+<br>
+<b><font size="4" font face="verdana"><a name="MUSEUM">Matang's Museum</a></b></font>
+<br>
+<CENTER><a href="http://www.jmm.gov.my/en/museum/matang-museum"><img src="photos/museum.png" alt="Me at Museum Matang" border="4"></a>
+<br>
+<br>
+<br>
+<b><font size="4" font face="verdana"><a name="ECOPARK">Spritzer Eco Park</a></b></font>
+<br>
+<CENTER><a href="https://www.spritzer.com.my/spritzer-ecopark/"><img src="photos/ecopark.png" alt="Me at Spritzer Eco Park" border="4"></a>
+<br>
+<br>
+<br>
+<b><font size="4" font face="verdana"><a name="TAMBUN">Lost World Of Tambun Theme Park</a></b></font>
+<br>
+<center><a href="https://sunwaylostworldoftambun.com/"><img src="photos/lostworld.png" alt="Me at Lost World Of Tambun" border="4"></a>
+<br>
+<br>
+<br>
+<br>
+<table border="0" width="85%" align="center" 
+<align="middle" cellpadding="15" cellspacing"15">
+<tr>
+<td bgcolor="F9E8A2"><h1>Date and Time</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click to display.</button>
+
+<p id="demo"></p></td>
+</tr>
+<tr>
+<center><td>
+<style="background-color:">
+<canvas id="canvas" width="400" height="400"
+style="background-color:">
+</canvas>
+<canvas id="canvas" width="400" height="400"
+style>
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 5;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'pink';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, 'black');
+  grad.addColorStop(0.5, 'black');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script></td>
+</tr>
+</table>
+<br>
+<br>
+<embed src="sound/slowmusic.mp3" hidden="true"></embed>
+<a href="experience.html"><img src="button/top.button.png"></a>
+<a href="#top"><img src"button/top.button.png"</a>
+</body>
+</html>

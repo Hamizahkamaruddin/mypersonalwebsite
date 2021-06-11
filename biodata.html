@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>biodata.html</title>
+</head>
+<body>
+<a name="top"></a>
+<style>
+body {
+  background-image: url(photos/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+</style>
+
+<marquee behavior="alternate"><img src="photos/slide1.jpg"><img src="photos/slide2.jpg"><img src="photos/slide1.jpg"></marquee> 
+<br>
+<table border="0" width="80%" align="center" 
+<align="middle" cellpadding="10" cellspacing"10">
+
+<br>
+ </h1><td colspan="4" align="center">
+<a href="index.html"><img src="button/home.button.png"></a>
+<a href="biodata.html"><img src="button/biodata.button.png"></a>
+<a href="education.html"><img src="button/education.button.png"></a>
+<a href="experience.html"><img src="button/experience.button.png"></a>
+<a href="family.html"><img src="button/family.button.png"></a>
+<a href="gallery.html"><img src="button/gallery.button.png"></a>
+<a href="hobby.html"><img src="button/hobby.button.png"></a>
+<br>
+
+<CENTER><font face="Lucida Handwriting"font color="TOMATO"font size="5"><h1><a Name="TOP">MY BIODATA</a></h1></font>
+<br>
+<br>
+<video height="400" width="700" controls>
+   <source src="videos/biodata.MP4" type="video/mp4">
+</video>
+<br>
+<br>
+<center><h2><font color="brown"><font face="times new roman"><font size="6"a name="top"> A Little Bit About Myself</a></h2></font>
+<table border="1" width="80%" align="center" 
+<align="middle" cellpadding="10" cellspacing"10">
+
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="1"><b><li>NAME</li></ol></b></td>
+    <td bgcolor="#F7DBC6">NORHAMIZAH BINTI KAMARUDDIN</td>
+    
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="2"><b><li>AGE</li></ol></b></td>
+    <td bgcolor="#F7DBC6">21 YEARS OLD</td>
+    
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="3"><b><li>DATE OF BIRTH</li></ol></b></td>
+    <td bgcolor="#F7DBC6">10 FEBRUARY 2000</td>
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="4"><b><li>LOCATION</li></ol></b></td>
+    <td bgcolor="#F7DBC6">TAIPING, PERAK</td>
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="5"><b><li>STUDIES</li></ol></b></td>
+    <td bgcolor="#F7DBC6">UITM SG.PETANI KEDAH</td>
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="6"><b><li>FAVOURITE FOOD AND DRINK</li></ol></b></td>
+    <td bgcolor="#F7DBC6">JAPANESE OR KOREAN FOOD AND ANY KIND OF TEA</td>
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="7"><b><li>FAVOURITE COLOUR</li></ol></b></td>
+    <td bgcolor="#F7DBC6">PASTEL COLOUR</td>
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="8"><b><li>FAVOURITE SONG</li></ol></b></td>
+    <td bgcolor="#F7DBC6"><a href="https://www.youtube.com/watch?v=PNozaFzqOvI">Duncan Laurence - Arcade</a>
+<br>
+<a href="https://www.youtube.com/watch?v=GeV4j6lo7Yw">Runaway - AURORA</a>
+<br>
+<a href="https://www.youtube.com/watch?v=vMePycN3k18&list=RDMM&start_radio=1&rv=nja_0BaQcNg">Ali Gatie - Moonlight</a>
+<br>
+<a href="https://www.youtube.com/watch?v=UC8JSS6O7OU&list=RDMM&index=24">Roddy Ricch - The Box</a>
+<br>
+<a href="https://www.youtube.com/watch?v=UC8JSS6O7OU&list=RDMM&index=17">Heartbreak Anniversary</a></td>
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="9"><b><li>MEDIA SOCIAL</li></ol></b></td>
+    <td bgcolor="#F7DBC6"><a href="https://www.instagram.com/homozoh_/"><font color="FFOOCC">INSTAGRAM</font></a> 
+                          <br><a href="https://www.facebook.com/nor.hamizah.52643/"><font color="277ADE">FACEBOOK</font></a></td>
+</tr>
+<tr>
+    <td bgcolor="DarkSalmon"><ol type="1" start="10"><b><li>FAVOURITE MOVIE</li></ol></b></td>
+    <td bgcolor="#F7DBC6"><video id="cinderella" height="200" width="500" controls="controls">
+<source src="videos/cinderella.mp4" type="video/mp4">
+</video>
+
+<script>
+
+function disableAutoplay() { 
+  vid.autoplay = false;
+  vid.load();
+
+</script>
+<center><br>CINDERELLA</td>
+</tr></table>
+<br>
+<br>
+<br>
+<br>
+<table border="0" width="100%" align="center" 
+<align="middle" cellpadding="15" cellspacing"15">
+<tr>
+<td bgcolor="F9E8A2"><h1>Date and Time</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click to display.</button>
+
+<p id="demo"></p></td>
+</tr>
+<tr>
+<center><td>
+<style="background-color:">
+<canvas id="canvas" width="400" height="400"
+style="background-color:">
+</canvas>
+<canvas id="canvas" width="400" height="400"
+style>
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 5;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'pink';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, 'black');
+  grad.addColorStop(0.5, 'black');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script></td>
+</tr>
+</table>
+<br>
+<embed src="sound/slowmusic.mp3" hidden="true"></embed>
+<a href="biodata.html"><img src="button/top.button.png"></a>
+<a href="#top"><img src"button/top.button.png"</a>
+</body>
+</html>
